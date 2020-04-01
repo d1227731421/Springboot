@@ -1,0 +1,28 @@
+<!--pages/look/look.wxml-->
+<view class="top">
+      <view wx:for="{{li}}" wx:key="que">
+      <view bindtap='select' data-id='{{index}}'  class="{{id==index?'select':'uselect'}}">{{item}}</view>
+      </view>
+</view>
+<view class='page_row'>
+    <view class="search">
+        <view class="df search_arr">
+            <icon class="searchcion" size='20' type='search'></icon>
+            <input confirm-type='search' bindinput="onInput" bindconfirm='handsearch' placeholder="请输入关键字" value='{{key}}' />
+        </view>
+    </view>
+    <view class='sousuo' bindtap="handsearch" data-key='{{key}}'>搜索</view>
+</view>
+<view wx:if="{{show}}" class='article-view'  hover-class="common" bindtap='hindinfor'  wx:for="{{articleList}}"  data-id='{{item.id}}' >
+    <text class='article-title'>{{item.title}}</text>
+    <text  class='article-from'>来自:{{item.from}}</text>
+    <text class='article-createtime'>发布于:{{item.createTime}}</text> 
+   <text class='article-clicknumber'> 阅读量:{{item.clickNumber}}</text> 
+</view>
+<view wx:if="{{!show}}" >
+      <view wx:for="{{cartoonList}}" class='cartoon-view' bindtap='handcartoon' data-id='{{item.id}}' >
+        <image src='{{item.img}}'></image>
+        <view>{{item.title}}</view>
+         <view  class='cartoon-time'>{{item.createTime}}</view>
+      </view>
+</view>

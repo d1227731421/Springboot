@@ -1,0 +1,31 @@
+<view class='page_row'>
+    <view class="search">
+        <view class="df search_arr">
+            <icon class="searchcion" size='20' type='search'></icon>
+            <input confirm-type='search' bindinput="onInput" bindconfirm='handsearch' placeholder="请输入关键字" value='{{key}}' />
+        </view>
+    </view>
+    <view class='sousuo' bindtap="handsearch" data-key='{{key}}'>搜索</view>
+</view>
+<view class='listmsg'>
+    <view class='msgcell' bindtap='handroom' data-roomid='{{item.number}}' wx:for="{{roomlist}}" wx:key="{{item.id}}">
+            <image src='{{item.img}}'></image>
+            <text class='title'>{{item.name}}</text>
+            <text class='msg'>{{item.last}}</text>
+        <mp-badge wx:if="{{item.tag!=null}}" class="tag" content="{{item.tag}}" style="margin-left: 5px;" />
+    </view>
+</view>
+<view wx:if="{{madalflag}}">
+    <modal cancel-text="关闭" confirm-text="确认" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+        <view>
+            <text class='modal-title'> 请添加群名字和头像</text>  
+            <input placeholder='请输入群名字' value='{{name}}' bindinput='handinput'></input>
+                <view wx:if="{{imgflag}}">
+                    <image src="{{images}}" bindtap="chooseImage"></image>
+                </view>
+                <view wx:if="{{!imgflag}}">
+                    <mp-icon bindtap="chooseImage" icon="add" color="gray" size="{{100}}"></mp-icon>
+                </view>
+        </view>
+    </modal>
+</view>

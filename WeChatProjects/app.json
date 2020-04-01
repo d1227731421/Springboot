@@ -1,0 +1,67 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/look/look",
+        "pages/chat/chat",
+        "pages/home/home",
+        "pages/music/music",
+        "pages/my/my",
+        "pages/chat/chatroom/chatroom",
+        "pages/look/infor/infor",
+        "pages/my/history/history"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffed97",
+        "navigationBarTitleText": "压力释放平台",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#7703b8",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "iconPath": "icons/home-1.png",
+                "selectedIconPath": "icons/home-2.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/look/look",
+                "iconPath": "icons/test-1.png",
+                "selectedIconPath": "icons/test-2.png",
+                "text": "文章"
+            },
+            {
+                "pagePath": "pages/music/music",
+                "iconPath": "icons/music-1.png",
+                "selectedIconPath": "icons/music-2.png",
+                "text": "音乐"
+            },
+            {
+                "pagePath": "pages/chat/chat",
+                "iconPath": "icons/chat-1.png",
+                "selectedIconPath": "icons/chat-2.png",
+                "text": "聊天"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "icons/my-1.png",
+                "selectedIconPath": "icons/my-2.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "mp-toptips": "weui-miniprogram/toptips/toptips",
+        "mp-cells": "weui-miniprogram/cells/cells",
+        "mp-cell": "weui-miniprogram/cell/cell",
+        "mp-checkbox": "weui-miniprogram/checkbox/checkbox",
+        "mp-checkbox-group": "weui-miniprogram/checkbox-group/checkbox-group",
+        "mp-form": "weui-miniprogram/form/form",
+        "mp-icon": "weui-miniprogram/icon/icon",
+        "mp-badge": "weui-miniprogram/badge/badge"
+    }
+}

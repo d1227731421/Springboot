@@ -1,0 +1,42 @@
+<view >
+    <view class="viewText" hover-class="common" >
+      <image src="{{headPortrait}}" class="userImg" bindtap='chooseImage'></image>
+    </view>
+</view>
+    <view class='v-name' bindtap='handupdate' hover-class="common">
+    <text class='text-title'>昵称:</text>{{userName}}
+    <mp-icon icon="me"  class='v-icon' color="black" size="{{25}}"></mp-icon>
+    </view>
+      <view class='v-name' bindtap='handupdate'  hover-class="common">
+    <text  class='text-title'>密码:</text>*********
+    <mp-icon icon="keyboard"  class='v-icon' color="black" size="{{25}}"></mp-icon>
+
+    </view>
+          <view class='v-name' bindtap='gohistory'  hover-class="common">
+    <text  class='text-title'>最近浏览</text>
+    <mp-icon icon="photo-wall"  class='v-icon' color="black" size="{{25}}"></mp-icon>
+
+    </view>
+    <view wx:if="{{madalflag}}">
+    <modal    title="修改信息"    confirm-text="确认"  bindcancel="modalCancel" bindconfirm='modalConfirm'>
+    <view class="login-from">
+
+        <view class="inputView">
+            <image class="nameImage" src="../images/name.png"></image>
+            <input class="inputText" placeholder="请输入昵称" bindblur="sureName" value='{{registerName}}' bindinput="nameRegister" />
+        </view>
+        <view class="line"><text class="tipName">{{tipName}}</text>  </view>
+
+        <view class="inputView">
+            <image class="keyImage" src="../images/key.png"></image>
+            <input class="inputText" password="true" value='{{registerPassword}}'   placeholder="请输入密码"bindinput="passwordRegister" />
+        </view>
+         <view class="line"></view>
+        <view class="inputView">
+            <image class="keyImage" src="../images/key.png"></image>
+            <input class="inputText" password="true" value='{{registerPasswordSure}}'   placeholder="请确认密码"bindinput="passwordRegistertSure" />
+        </view>
+  <view class="line"><text class="tipPasswd">{{tipPasswd}}</text></view>
+    </view>
+    </modal>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/look/look.wxml-->
+<view class="top">
+      <view wx:for="{{li}}" wx:key="que">
+      <view bindtap='select' data-id='{{index}}'  class="{{id==index?'select':'uselect'}}">{{item}}</view>
+      </view>
+</view>
+
+<view wx:if="{{show}}" class='article-view'  hover-class="common" bindtap='hindinfor'  wx:for="{{article}}"  data-id='{{item.id}}' >
+    <text class='article-title'>{{item.title}}</text>
+    <text  class='article-from'>来自:{{item.from}}</text>
+    <text class='article-createtime'>发布于:{{item.createTime}}</text> 
+   <text class='article-clicknumber'> 阅读量:{{item.clickNumber}}</text> 
+</view>
+<view wx:if="{{!show}}" >
+      <view wx:for="{{cartoon}}" class='cartoon-view' bindtap='handcartoon' data-id='{{item.id}}' >
+        <image src='{{item.img}}'></image>
+        <view>{{item.title}}</view>
+         <view  class='cartoon-time'>{{item.createTime}}</view>
+      </view>
+</view>

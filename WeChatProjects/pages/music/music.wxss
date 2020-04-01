@@ -1,0 +1,125 @@
+/* pages/music/music.wxss */
+.v-item{
+width:158px;
+height:167px;
+background-color :white;
+display:inline-flex;
+margin:12px;
+position:relative;
+font-size:13px;
+box-shadow: 1px 1px 1px 1px grey
+
+}
+page {
+       background-color: whitesmoke;
+}
+.v-body>view>image{
+    height:120px;
+    width: 120px;
+    border-radius: 6%;
+   margin-left:20px;
+margin-top:9px;
+box-shadow: 1px 1px 1px 1px grey
+
+}
+.v-body{
+    min-height: 555px
+}
+.v-name{
+position: absolute;
+background-color :white;
+bottom: 12px;
+width:156px;
+text-align: center
+}
+.music-view{
+    border-bottom:1px solid gainsboro;
+    color: black;
+    height: 35px;
+    padding-top: 12px
+}
+
+
+
+.search {
+    width: 80%;
+}
+
+input {
+    background-color: white;
+}
+
+.search_arr {
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    background-color: white;
+}
+
+.search_arr input {
+    margin-left: 60rpx;
+    height: 60rpx;
+    border-radius: 5px;
+}
+
+.sousuo {
+    width: 15%;
+    line-height: 200%;
+    margin-left: 8rpx;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+    background-color: white;
+}
+
+.page_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+}
+
+.searchcion {
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    position: absolute;
+    left: 25rpx;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.top {
+    font-size: 30rpx;
+}
+
+.listmsg {
+    position: relative;
+}
+
+.icon-view{
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
+.icon-play{
+    position: absolute;
+    bottom: -3px;
+    left: 127px;
+}
+.icon-pause{
+     position: absolute;
+    bottom: -3px;
+    left: 126px;
+}
+.icon-back {
+     position: absolute;
+    bottom: 0px;
+    left: 56px;
+}
+.icon-arrow {
+    position: absolute;
+   bottom:-2px;
+    left:210px;
+
+}

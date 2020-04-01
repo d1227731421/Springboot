@@ -1,0 +1,144 @@
+.top {
+    width: 100%;
+    display: inline-flex;
+    background-color: white;
+}
+
+.top>view {
+    text-align: center;
+    font-size: 30rpx;
+    width: 374rpx;
+    height: 75rpx;
+    font-weight: 500;
+}
+
+.uselect {
+    margin-top: 16rpx;
+    width: 374rpx;
+    height: 60rpx;
+}
+
+.select {
+    margin-top: 16rpx;
+    width: 374rpx;
+    height: 60rpx;
+    border-bottom: 1px red solid;
+}
+
+.article-view {
+    height: 70px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.common {
+    background-color: #ededed;
+}
+
+.article-title {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.article-from {
+    position: absolute;
+    left: 8px;
+    top: 29px;
+    font-size: 12px;
+}
+
+.article-createtime {
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    font-size: 12px;
+    color: gray;
+}
+
+.article-clicknumber {
+    position: absolute;
+    bottom: 2px;
+    left: 180px;
+    font-size: 12px;
+    color: gray;
+}
+
+.cartoon-view {
+    margin-left: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 13px;
+}
+.cartoon-view >image{
+    margin-bottom: 10px;
+}
+.cartoon-view >view{
+    margin-bottom: 10px;
+}
+.cartoon-time {
+   position:absolute;
+bottom:26px;
+right:27px;
+color:gray;
+font-size:12px;
+
+}
+
+
+.search {
+    width: 80%;
+}
+
+input {
+    background-color: white;
+}
+
+.search_arr {
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    background-color: white;
+}
+
+.search_arr input {
+    margin-left: 60rpx;
+    height: 60rpx;
+    border-radius: 5px;
+}
+
+.sousuo {
+    width: 15%;
+    line-height: 200%;
+    margin-left: 8rpx;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+    border-radius: 10rpx;
+    background-color: white;
+}
+
+.page_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+}
+
+.searchcion {
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    position: absolute;
+    left: 25rpx;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.top {
+    font-size: 30rpx;
+}
+
+.listmsg {
+    position: relative;
+}

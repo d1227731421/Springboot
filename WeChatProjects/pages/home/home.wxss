@@ -1,0 +1,97 @@
+.textarea {
+    position: relative;
+    margin-top: 3px;
+}
+
+.number-text {
+    position: absolute;
+    right: 16px;
+    bottom: 4px;
+}
+
+textarea {
+    height: 92px;
+    min-height: 100px;
+}
+
+
+
+.contents-img {
+    text-align: center;
+}
+
+.add-img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.add-view {
+    display: inline-flex;
+}
+
+.add-view>view {
+    border: none;
+}
+
+button {
+    margin-top: 3px;
+    background-color: #25c578;
+}
+
+.contents {
+    margin-top: 8px;
+}
+
+.add-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+}
+
+.weui-cell-third{
+  background: #fff;
+  margin-top:24px;
+
+}
+.weui-cell-list{
+  background: #fff;
+  margin: 12px 50px 5px 10px;
+}
+.weui-cell-line{
+margin-left: 5px;
+  border-left: 1px solid #ddd;
+  height: auto; 
+  background: #fff;
+}
+.weui-cell-circle{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  border-color: blue;
+}
+.weui-cell-time{
+  /* width: 50px; */
+  float: left;
+  font-size:13px;
+  padding-left: 15px;
+width:128px;
+
+ 
+}
+.weui-cell-event{
+ 
+  padding-top: -3px;
+  padding-left: 15px;
+  font-size: 15px;
+  height: auto;
+  margin-bottom:12px;
+
+}
+.weui-cell-name{
+font-size:14px;
+height:23px;
+margin-left: 0px;
+}

@@ -1,0 +1,35 @@
+<view class="top">
+      <view wx:for="{{li}}" wx:key="que">
+      <view bindtap='select' data-id='{{index}}'  class="{{id==index?'select':'uselect'}}">{{item}}</view>
+      </view>
+</view>
+<view class='page_row'>
+    <view class="search">
+        <view class="df search_arr">
+            <icon class="searchcion" size='20' type='search'></icon>
+            <input confirm-type='search' bindinput="onInput" bindconfirm='handsearch' placeholder="请输入关键字" value='{{key}}' />
+        </view>
+    </view>
+    <view class='sousuo' bindtap="handsearch" data-key='{{key}}'>搜索</view>
+</view>
+<view class="v-body">
+    <view class='v-item' wx:for="{{musicTableList}}" wx:key="{{item.id}}" bindtap='showMusic' data-index='{{index}}'>
+        <image src='{{item.img}}'></image>
+        <view class='v-name'>
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+</view>
+<view wx:if="{{madalflag}}">
+    <modal no-cancel="true"     confirm-text="关闭"  bindconfirm='modalConfirm'>
+    <scroll-view scroll-y' style='height: 76vw;'>
+        <view class='music-view' wx:for="{{musicList}}"  bindtap='play'  data-index='{{index}}' wx:key="{{item.id}}">{{item.name}} </view>
+        </scroll-view>
+        <view class='icon-view'>
+         <mp-icon wx:if="{{flag}}" class='icon-play' bindtap='iconPlay'  icon="play"  color="black" size="{{25}}"></mp-icon>
+         <mp-icon  wx:if="{{!flag}}" bindtap='pause' class='icon-pause' icon="pause" color="black" size="{{25}}"></mp-icon>
+         <mp-icon  class='icon-back' bindtap='back' icon="back"  color="black" size="{{10}}"></mp-icon>
+         <mp-icon class='icon-arrow' bindtap='next'  icon="arrow"   color="black" size="{{12}}"></mp-icon>
+        </view>
+    </modal>
+</view>
